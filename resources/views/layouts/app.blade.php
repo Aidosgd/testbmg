@@ -39,7 +39,7 @@
                 </button>
 
                 <!-- Branding Image -->
-                <a class="navbar-brand" href="{{ url('/') }}">
+                <a class="navbar-brand" href="{{ url('/client') }}">
                     Laravel
                 </a>
             </div>
@@ -53,6 +53,11 @@
                             <a href="/cms/{{ $link }}">{{ $item }}</a>
                         </li>
                     @endforeach
+                        <li>
+                            <a href="{{ url('/client') }}">
+                                Client
+                            </a>
+                        </li>
                 </ul>
 
                 <!-- Right Side Of Navbar -->
