@@ -1,3 +1,24 @@
+# УСТАНОВКА
+
+#### 1. Заходим в проект и устанавливаем зависимости
+```code
+composer update && php artisan key:generate
+```
+
+#### 2. Прописываем свои настройки в .env файл, мигрируем таблицы, сидим лекций, тесты, вопросы и ответы
+```code
+php artisan migrate && php artisan db:seed
+```
+
+#### 3. Бывает, что нужно дать права на запись для папки storage
+```code
+sudo chmod -R 777 storage
+```
+
+#### 4. Тестируем сайт !!!
+
+
+
 # Laravel PHP Framework
 
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
